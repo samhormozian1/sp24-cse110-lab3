@@ -2,67 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pomodoro Timer First Brainstorm</title>
+    <title>Project Update Meeting</title>
+    <meta name="description" content="Minutes of the Project Update Meeting held on April 12, 2024.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Pomodoro Timer First Brainstorm</h1>
-        <h2>Brainstorming Session</h2>
-        <h3>April 12, 2024</h3>
+        <h1>Project Update Meeting</h1>
+        <nav>
+            <ul>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#discussion">Discussion Points</a></li>
+                <li><a href="#recordings">Recordings</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section>
-        <h2>Attendance</h2>
-        <ul>
-            <li>John Doe</li>
-            <li>Jane Smith</li>
-            <li>Alice Johnson</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Agenda</h2>
-        <ol>
-            <li>Review of last meeting's action items</li>
-            <li>Discussion of new features</li>
-            <li>Allocation of new tasks</li>
-        </ol>
-    </section>
-    
-    <section>
-        <h2>Unfinished Business from Last Meeting</h2>
-        <p>Follow up on the integration of the new database system.</p>
-    </section>
-    
-    <section>
-        <h2>New Business</h2>
-        <ul>
-            <li>Proposed changes to the application design.</li>
-            <li>Introduction of testing protocols.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Miscellaneous</h2>
-        <p>Discussion on potential team outing ideas.</p>
-    </section>
-    
-    <section>
-        <h2>Whiteboard Diagrams</h2>
-        <img src="diagram.jpg" alt="Whiteboard diagram from the meeting">
-    </section>
-    
-    <footer>
-        <h2>Recordings</h2>
-        <audio controls>
-            <source src="meeting.mp3" type="audio/mpeg">
-           
-        </audio>
-        
-        <video controls>
-            <source src="meeting.mp4" type="video/mp4">
+
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Welcome to the <strong>monthly update</strong> meeting where we review our progress and plan the steps ahead.</p>
+        </section>
+
+        <hr>
+
+        <section id="agenda">
+            <h2>Meeting Agenda</h2>
+            <ol>
+                <li>Project progress overview</li>
+                <li>Discussion on new features</li>
+                <li>Next steps and assignments</li>
+            </ol>
+        </section>
+
+        <div>
+            <h2>Key Highlights</h2>
+            <span><em>Note:</em> Major milestones achieved this month included.</span>
+        </div>
+
+        <section id="discussion">
+            <h3>Discussion Points</h3>
+            <ul>
+                <li>Review of the current architecture <b>(see diagram below)</b></li>
+                <li>Performance enhancements planned</li>
+                <li>Budget adjustments needed</li>
+            </ul>
+            <img src="diagram.jpg" alt="Project architecture diagram">
+        </section>
+
+        <footer>
+            <details>
+                <summary>Meeting Details</summary>
+                <p>Time: 10:00 AM - 11:30 AM</p>
+                <p>Date: April 12, 2024</p>
+                <p>Location: Conference Room B</p>
+            </details>
+
+            <section id="recordings">
+                <h3>Recordings</h3>
+                <audio controls>
+                    <source src="meeting.mp3" type="audio/mp3">
             
-        </video>
-    </footer>
+                </audio>
+                <video controls>
+                    <source src="meeting.mp4" type="video/mp4">
+                    
+                </video>
+            </section>
+        </footer>
+    </main>
+
+    <aside>
+        <h2>Feedback Form</h2>
+        <form>
+            <fieldset>
+                <legend>Provide your feedback</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label>Meeting usefulness:</label>
+                <input type="radio" id="useful" name="usefulness" value="useful">
+                <label for="useful">Useful</label>
+                <input type="radio" id="not_useful" name="usefulness" value="not_useful">
+                <label for="not_useful">Not useful</label><br><br>
+
+                <label for="nextTopics">Suggested topics for next meeting:</label>
+                <textarea id="nextTopics" name="nextTopics"></textarea><br><br>
+
+                <label for="date">Preferred next meeting date:</label>
+                <input type="date" id="date" name="date"><br><br>
+
+                <label for="teamList">Select your team:</label>
+                <select id="teamList">
+                    <option value="software">Software Development</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="sales">Sales</option>
+                </select><br><br>
+
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </aside>
 </body>
 </html>
