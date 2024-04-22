@@ -57,7 +57,7 @@ section {
 }
 
 hr {
-    border-top: 2px solid color-mix(in srgb, orange 50%, red 50%); /* Using color-mix for a border color */
+    border-top: 2px solid rgb(255, 128, 128); /* Using color for a border color */
 }
 
 /* Borders */
@@ -131,7 +131,7 @@ aside {
 }
 
 .introduction {
-    background-color: color(display-p3 0.5 0.7 0.1); /* Using wider-gamut color */
+    background-color: #80C565 
 }
 
 span.introduction, a { /* Selector list */
