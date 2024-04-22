@@ -1,0 +1,169 @@
+/* CSS Variables */
+:root {
+    --main-bg-color: #f5f5f5; /* Default background color */
+    --main-text-color: #333;
+    --highlight-color: rgb(255, 165, 0); /* Color in RGB format */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Using a third-party font */
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+/* Header and Navigation */
+header {
+    background-color: hsl(200, 50%, 30%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Using 'inline-block' as one of the display properties */
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Pseudo-class selector */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: var(--highlight-color);
+}
+
+/* Margin and Padding (Box Model) */
+section {
+    margin: 20px; /* Using shorthand for margin */
+    padding: 15px; /* Using shorthand for padding */
+}
+
+hr {
+    border-top: 2px solid color-mix(in srgb, orange 50%, red 50%); /* Using color-mix for a border color */
+}
+
+/* Borders */
+div {
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Using RGBA for a border */
+    border-radius: 5px; /* Rounded borders */
+}
+
+/* Text Styles */
+p {
+    text-align: justify;
+    line-height: 1.5; /* Relative unit for line height */
+}
+
+/* Display Properties */
+span {
+    display: inline; /* Using 'inline' as one of the display properties */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Positioning */
+aside {
+    position: relative; /* Using 'relative' and 'absolute' for positioning */
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-left: 1px solid #ccc;
+}
+
+#feedback-form {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex; /* Applying flexbox */
+    justify-content: space-between; /* Flexbox attribute */
+    align-items: center; /* Flexbox attribute */
+    gap: 10px; /* Flexbox attribute */
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid; /* Applying grid */
+    grid-template-columns: repeat(3, 1fr); /* Grid attribute */
+    grid-gap: 15px; /* Grid attribute */
+}
+
+/* Responsiveness with Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Reflow layout for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Adjusting flex direction */
+    }
+}
+
+/* CSS Selectors and Combinators */
+#agenda {
+    color: #008000; /* ID selector */
+}
+
+.introduction {
+    background-color: color(display-p3 0.5 0.7 0.1); /* Using wider-gamut color */
+}
+
+span.introduction, a { /* Selector list */
+    color: hsl(120, 60%, 50%);
+}
+
+.introduction > p { /* Child combinator */
+    font-weight: bold;
+}
+
+#agenda + div { /* Adjacent sibling combinator */
+    color: #ff0000; /* Using named color */
+}
+
+p ~ span { /* General sibling combinator */
+    font-style: italic;
+}
+
+main section:has(img) { /* Using the new :has selector */
+    border: 2px solid #333;
+}
+
+nav ul {
+    /* Nested selectors */
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block; /* Nested selectors */
+}
+
+/* Attribute Selector */
+input[type="radio"] {
+    margin-right: 5px;
+}
